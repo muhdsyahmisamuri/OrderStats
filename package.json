@@ -5,7 +5,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && node server.js",
-    "client": "cd frontend && npm run dev"
+    "client": "cd frontend && npm run dev -- -p 3001"
   },
   "dependencies": {
     "concurrently": "^9.1.1"

@@ -31,8 +31,8 @@ const startServer = async () => {
     console.log("Database connected and synchronized");
 
     // Get the __dirname equivalent for ES Modules
-    const __filename = fileURLToPath(import.meta.url);  // Get current file path
-    const __dirname = path.dirname(__filename);  // Get the directory name
+    const __filename = fileURLToPath(import.meta.url); // Get current file path
+    const __dirname = path.dirname(__filename); // Get the directory name
 
     // Read mock data from JSON file and insert into the database
     const mockDataFile = path.join(__dirname, "mock", "mockData.json");
@@ -45,7 +45,7 @@ const startServer = async () => {
     await SalesOrder.bulkCreate(mockOrders, { ignoreDuplicates: true });
     console.log("Mock data inserted");
 
-    const PORT = process.env.PORT || 3000;
+    const PORT = process.env.PORT || 5001;
     app.listen(PORT, () =>
       console.log(`Server running on http://localhost:${PORT}`)
     );
