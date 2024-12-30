@@ -93,6 +93,12 @@ The backend server will be running on `http://localhost:5001`.
 cd frontend
 ```
 
+- Add/Edit a `.env.local` file in the `frontend` directory and configure your environment variables (e.g., for database connection):
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:5001
+```
+
 - Install frontend dependencies:
 
 ```bash
