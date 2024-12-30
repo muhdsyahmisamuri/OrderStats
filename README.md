@@ -2,6 +2,8 @@
 
 This is a full-stack OrderStats Application with a **NextJS frontend** and a **Node.js/Express backend**. 
 
+App demo: [https://youtu.be/3J8cA3ka6Dk](https://youtu.be/drY12tCyCzg)
+
 ## Features
 
 ### Frontend
@@ -119,6 +121,7 @@ You can directly start both the backend and frontend with one command after sett
 To run both the backend and frontend simultaneously, navigate to the root project directory (`OrderStats`) and run:
 
 ```bash
+npm install
 npm start
 ```
 
