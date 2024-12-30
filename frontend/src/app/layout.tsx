@@ -10,6 +10,11 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+export const metadata: Metadata = {
+  title: "OrderStats",
+  description: "syahmisam.my: Coding - the art, the science, and the passion.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
